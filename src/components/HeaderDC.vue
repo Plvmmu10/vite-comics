@@ -2,7 +2,7 @@
     <div class="myContainer text-black">
         <!-- Logo -->
         <div class="logo-container">
-            <img src="../assets/images/dc-logo.png" alt="logoDCsmall">
+            <img src="/images/dc-logo.png" alt="logoDCsmall">
         </div>
 
         <!-- Navbar -->

@@ -58,7 +58,13 @@ export default {
 }
 
 .icons-text {
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 </style>
