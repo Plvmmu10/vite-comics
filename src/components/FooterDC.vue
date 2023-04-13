@@ -1,6 +1,10 @@
 <template>
     <div class="myContainer">
+
+        <!-- Top footer with all lists and big logo -->
         <div class="top-footer text-white d-flex justify-content-between">
+
+            <!-- List container -->
             <div class="listContainer d-flex flex-wrap">
                 <ul v-for="(item, index) in footerLi" :key="index" class="d-flex flex-column">
                     <h4 class="text-uppercase m-0">{{ item.title }}</h4>
@@ -16,6 +20,7 @@
                 </ul>
             </div>
 
+            <!-- Big logo container -->
             <div class="img-box">
             </div>
         </div>
@@ -23,8 +28,10 @@
 
     </div>
 
+    <!-- Bottom footer with sign-up button and social icons -->
     <div class="bottom-footer d-flex justify-content-center">
         <div class="w-75 d-flex justify-content-between">
+            <!-- Sign up button -->
             <div>
                 <button class="text-uppercase fw-bold">sign-up now!</button>
             </div>
@@ -32,6 +39,7 @@
             <div class="d-flex align-items-center flex-wrap">
                 <h4 class="text-uppercase m-0 px-3">follow us</h4>
 
+                <!-- All social icons -->
                 <img src="/images/footer-facebook.png" alt="facebook">
                 <img src="/images/footer-twitter.png" alt="twitter">
                 <img src="/images/footer-youtube.png" alt="twitter">
