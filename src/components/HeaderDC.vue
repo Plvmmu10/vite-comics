@@ -68,17 +68,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.myContainer {
-    margin: 0 auto;
-    padding: 1rem 0;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-
-    ul {
-        list-style: none;
-        display: flex;
-    }
-}
-</style>
+<style lang="scss" scoped></style>
