@@ -1,9 +1,9 @@
 <template>
     <div class="myContainer">
-        <ul v-for="(item, i) in liMain" :key="i">
-            <li class="d-flex align-items-center">
+        <ul>
+            <li class="d-flex align-items-center px-3" v-for="(item, i) in liMain" :key="i">
                 <div class="icons-box">
-                    <img :src="'../assets/images/' + item.image">
+                    <img :src="'/images/' + item.image">
                 </div>
 
                 <p class="icons-text text-uppercase">
@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .icons-box {
-    width: 50px;
+    width: 40px;
     margin: 0 .5rem;
 
     img {
