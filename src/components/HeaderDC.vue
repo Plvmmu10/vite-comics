@@ -24,43 +24,53 @@ export default {
             liHeader: [
                 {
                     text: 'characters',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'comics',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'movies',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'tv',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'games',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'collectibles',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'videos',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'fans',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'news',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     text: 'shop',
-                    url: '#'
+                    url: '#',
+                    active: false
                 }
             ]
         }
