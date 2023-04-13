@@ -6,9 +6,12 @@
                     <img :src="'/images/' + item.image">
                 </div>
 
-                <p class="icons-text text-uppercase">
-                    {{ item.text }}
-                </p>
+                <a href="#">
+                    <p class="icons-text text-uppercase">
+                        {{ item.text }}
+                    </p>
+                </a>
+
 
             </li>
         </ul>
@@ -49,11 +52,15 @@ export default {
 
 <style lang="scss" scoped>
 .icons-box {
-    width: 40px;
+    width: 50px;
+    height: 50px;
     margin: 0 .5rem;
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
     }
 }
 
@@ -62,9 +69,22 @@ export default {
     margin: 0;
 }
 
-ul {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+.myContainer {
+    justify-content: center;
+
+    ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            cursor: pointer;
+
+            a {
+                color: white;
+            }
+        }
+
+    }
 }
 </style>
