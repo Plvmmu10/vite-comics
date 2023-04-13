@@ -1,5 +1,5 @@
 <template>
-    <div class="myContainer text-black">
+    <div class="myContainer text-black align-items-center">
         <!-- Logo -->
         <div class="logo-container">
             <img src="/images/dc-logo.png" alt="logoDCsmall">
