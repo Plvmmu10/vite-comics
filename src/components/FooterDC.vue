@@ -29,7 +29,7 @@
                 <button class="text-uppercase fw-bold">sign-up now!</button>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-wrap">
                 <h4 class="text-uppercase m-0 px-3">follow us</h4>
 
                 <img src="/images/footer-facebook.png" alt="facebook">
