@@ -215,6 +215,11 @@ export default {
 
         .listItem {
             color: rgba(211, 211, 211, 0.5);
+            cursor: pointer;
+
+            a:hover {
+                color: #0282f9;
+            }
         }
     }
 }
