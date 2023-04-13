@@ -1,7 +1,5 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-
-
 header {
     background-color: $white;
 
@@ -15,7 +13,11 @@ a {
 }
 
 main {
-    background-color: $black;
+    background-color: #1c1c1c;
+
+    .mainNav {
+        background-color: #0282f9;
+    }
 }
 
 .myContainer {
@@ -24,6 +26,7 @@ main {
     width: 75%;
     display: flex;
     justify-content: space-between;
+    color: $white;
 
     ul {
         list-style: none;

@@ -1,5 +1,5 @@
 <template>
-    <div class="myContainer">
+    <div class="myContainer text-black">
         <!-- Logo -->
         <div class="logo-container">
             <img src="../assets/images/dc-logo.png" alt="logoDCsmall">
@@ -7,8 +7,8 @@
 
         <!-- Navbar -->
         <div class="navbar">
-            <ul>
-                <li class="text-uppercase fw-bold px-2" v-for="(item, i) in liHeader" :key="i">
+            <ul v-for="(item, i) in liHeader" :key="i">
+                <li class="text-uppercase fw-bold">
                     <a :href="item.url">{{ item.text }}</a>
                 </li>
             </ul>
