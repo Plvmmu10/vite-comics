@@ -33,7 +33,7 @@ export default {
     span {
         position: absolute;
         top: -20px;
-        padding: 1rem;
+        padding: .7rem 1.5rem;
         background-color: #0282f9;
     }
 }
