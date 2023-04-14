@@ -65,7 +65,7 @@ export default {
 }
 
 .icons-text {
-    font-size: 17px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -79,6 +79,7 @@ export default {
 
         li {
             cursor: pointer;
+            padding: 10px;
 
             a {
                 color: white;

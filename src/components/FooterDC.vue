@@ -33,7 +33,7 @@
         <div class="w-75 d-flex justify-content-between">
             <!-- Sign up button -->
             <div>
-                <button class="text-uppercase fw-bold">sign-up now!</button>
+                <button class="text-uppercase fw-bold btn btn-outline-primary">sign-up now!</button>
             </div>
 
             <div class="d-flex align-items-center flex-wrap">
@@ -192,7 +192,7 @@ export default {
     width: 100%;
 
     .img-box {
-        width: 75%;
+        width: 70%;
         background-image: url(/images/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -207,10 +207,10 @@ export default {
 
 .listContainer {
     padding: 2rem 0;
-    width: 37%;
+    width: 40%;
 
     ul {
-        padding: 0 .1;
+        padding: 10px;
         margin: 0;
 
         .listItem {
@@ -231,15 +231,9 @@ export default {
     background-color: #303030;
     color: #0282f9;
 
-    button {
-        background-color: transparent;
-        border: 2px solid #0282f9;
-        color: white;
-        padding: .5rem;
-    }
-
     img {
         padding: 0 .5rem;
+        cursor: pointer;
     }
 }
 </style>
