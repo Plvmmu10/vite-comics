@@ -1,6 +1,11 @@
 <template>
     <div class="myContainer text-white flex-wrap">
+        <span class="text-uppercase fw-bold">current series</span>
         <CardDC :thumb="item.thumb" :series="item.series" v-for="item in comicsList" />
+        <div class="btn-container d-flex justify-content-center align-items-center w-100">
+            <button class="btn btn-primary text-uppercase rounded-0 fw-bold">load more</button>
+        </div>
+
     </div>
 </template>
 
@@ -23,5 +28,13 @@ export default {
 <style lang="scss" scoped>
 .myContainer {
     padding: 2rem 0;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: -20px;
+        padding: 1rem;
+        background-color: #0282f9;
+    }
 }
 </style>
