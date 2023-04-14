@@ -9,7 +9,8 @@
         <div class="navbar">
             <ul>
                 <li class="text-uppercase fw-bold d-none d-xxl-flex" v-for="(item, i) in liHeader" :key="i">
-                    <a :href="item.url">{{ item.text }}</a>
+                    <a :href="item.url" :class="i === currentIndex ? 'active' : ''" @click="getActive(i)">{{ item.text
+                    }}</a>
                 </li>
 
                 <i class="fa-solid fa-bars d-flex d-xxl-none"></i>
@@ -75,7 +76,13 @@ export default {
                     url: '#',
                     active: false
                 }
-            ]
+            ],
+            currentIndex: 0
+        }
+    },
+    methods: {
+        getActive(index) {
+            this.currentIndex = index;
         }
     }
 }
@@ -106,8 +113,16 @@ export default {
                 justify-content: center;
                 align-items: center;
 
-                &:hover {
-                    border-bottom: 5px solid #0282f9;
+
+
+                a {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        border-bottom: 5px solid #0282f9;
+                    }
                 }
             }
 
