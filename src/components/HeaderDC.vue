@@ -7,10 +7,13 @@
 
         <!-- Navbar -->
         <div class="navbar">
-            <ul v-for="(item, i) in liHeader" :key="i">
-                <li class="text-uppercase fw-bold">
+            <ul>
+                <li class="text-uppercase fw-bold d-none d-xxl-flex" v-for="(item, i) in liHeader" :key="i">
                     <a :href="item.url">{{ item.text }}</a>
                 </li>
+
+                <i class="fa-solid fa-bars d-flex d-xxl-none"></i>
+
             </ul>
         </div>
     </div>
@@ -78,4 +81,41 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.myContainer {
+    height: 100%;
+    padding: 0;
+
+    .navbar {
+        height: 100%;
+        padding: 0;
+
+        ul {
+            height: 100%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li {
+                height: 100%;
+                padding: 0;
+                margin: 0 .7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    border-bottom: 5px solid #0282f9;
+                }
+            }
+
+            i {
+                display: flex;
+                font-size: 40px;
+            }
+        }
+    }
+}
+</style>
