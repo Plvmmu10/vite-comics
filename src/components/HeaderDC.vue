@@ -7,15 +7,26 @@
 
         <!-- Navbar -->
         <div class="navbar">
-            <ul>
+            <div class="dropdown d-xxl-none">
+                <button @click="dropDown" class="btn"><i class="fa-solid fa-bars fs-3"></i></button>
+
+
+                <ul class="dropdown-menu" :class="drop && 'show'">
+                    <li class="text-uppercase fw-bold" v-for="(item, i) in liHeader" :key="i">
+                        <a :href="item.url" :class="i === currentIndex ? 'active' : ''" @click="getActive(i)"
+                            class="nav-link">{{ item.text
+                            }}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="mainList">
                 <li class="text-uppercase fw-bold d-none d-xxl-flex" v-for="(item, i) in liHeader" :key="i">
                     <a :href="item.url" :class="i === currentIndex ? 'active' : ''" @click="getActive(i)">{{ item.text
                     }}</a>
                 </li>
-
-                <i class="fa-solid fa-bars d-flex d-xxl-none"></i>
-
             </ul>
+
         </div>
     </div>
 </template>
@@ -67,12 +78,17 @@ export default {
                     url: '#'
                 }
             ],
-            currentIndex: 0
+            currentIndex: 0,
+            drop: false
         }
     },
     methods: {
         getActive(index) {
             this.currentIndex = index;
+        },
+        dropDown() {
+            this.drop = !this.drop;
+            console.log(this.drop)
         }
     }
 }
@@ -87,7 +103,7 @@ export default {
         height: 100%;
         padding: 0;
 
-        ul {
+        .mainList {
             height: 100%;
             padding: 0;
             display: flex;
@@ -102,8 +118,6 @@ export default {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-
 
                 a {
                     height: 100%;
@@ -121,6 +135,14 @@ export default {
                 font-size: 40px;
             }
         }
+    }
+
+    .dropdown {
+        background-color: white;
+    }
+
+    .dropdown-menu {
+        right: 0;
     }
 }
 </style>
